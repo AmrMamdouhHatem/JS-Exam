@@ -1,0 +1,301 @@
+body {
+  background-color: #0d0d0d;
+}
+
+i,
+img,
+.hover-layer,li {
+  cursor: pointer;
+}
+#loadingScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.785);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.loading-content {
+  text-align: center;
+}
+
+.loading-spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #ff8000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hover-layer p{
+  position:absolute ;
+  top: 50%;
+  transition: 0.5s;
+
+}
+
+
+.hover-layer {
+  position: absolute;
+  background-color: #f9f6f6c7;
+  text-align: center;
+  top: 110%;
+  bottom: 0%;
+  border-radius: 7px;
+  transition: 0.5s;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-family: "Assistant";
+  font-size: 30px;
+}
+
+.hover-layer p {
+  padding-left: 5px;
+  color: rgb(0, 0, 0);
+}
+
+img {
+  border-radius: 7px;
+}
+
+.pics-div {
+  overflow: hidden;
+}
+
+.pics-div:hover .hover-layer{
+  top: 0%;
+}
+.pics-div:hover .hover-layer p{
+  top:40%
+}
+
+/* end of main body */
+/* ------------------------------------------------------------------------------------------------------ */
+
+.topics {
+  width: 65%;
+  height: 100%;
+  background-color: #0d0d0d;
+  display: none;
+}
+
+.topics li {
+ 
+  color: #fff;
+}
+
+.topics ul {
+  margin-top: 32px;
+}
+
+.topics li {
+  list-style: none;
+  padding-bottom: 17px;
+}
+
+footer {
+  margin: 20px;
+  color: #fff;
+}
+
+.social-links li {
+  padding: 10px;
+}
+
+.white-sideBar {
+  width: 17%;
+  background-color: #fff;
+  height: 100% !important;
+}
+
+.white-sideBar img {
+  width: 70%;
+  background-color: aqua;
+  background-color: #fff;
+}
+
+.side-list {
+  transform: translateY(250%);
+  transition: all 1s ease;
+}
+
+.toggle-sideBar {
+  left: 0;
+}
+.hamada {
+  transform: translateY(0);
+}
+.logo-div {
+  height: 100%;
+  width: 100%;
+}
+
+.menu , .fa-x {
+  padding: 20px;
+
+  font-size: 30px;
+}
+.fa-x{
+  display: none;
+}
+.menu-hide{
+  display: none;
+}
+.appear{
+  display: inline;
+  display:contents;
+}
+
+aside {
+  width: 30%;
+  z-index: 9999999999;
+  height: 100% !important;
+  left: -20%;
+  top: 0;
+  bottom: 0;
+  transition: 0.7s;
+}
+
+
+
+.nav-bar {
+  height: 100%;
+}
+
+
+.mini-socialLinks a {
+  text-decoration: none;
+  color: #0d0d0d;
+  padding-top: 5px;
+}
+
+/* End of Navigation bar */
+/* ----------------------------------------------------------------------------------------------------- */
+.searchPage{
+  width: 100%;
+  background-color:#0D0D0D;
+ height: 90px;
+
+}
+
+.searchPage input{
+ 
+  background-color: #0D0D0D !important;
+  color:rgb(255, 255, 255) ;
+  border-radius: 5px;
+width: 36%;
+padding: 6px;
+margin-right: 20px;
+border-style: none;
+border: 1px solid #ffffffc8;
+
+}
+.searchPage input::placeholder{
+  color: #737373;
+}
+.input-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 400px;
+ 
+
+}
+
+.left-section, .right-section{
+  color: #fff;
+  padding: 25px;
+}
+.opo{
+  display: flex;
+  justify-content: space-around;
+  
+  background-color: #0D0D0D;
+   width: 100%;
+  
+ padding: 10px;
+  
+  
+  
+}
+
+.opo li{
+  
+  
+  margin-right: 10px;
+  width: auto;
+  height: 30px;
+  
+text-align: start;
+  font-size: 16px;
+  background-color: #cff4fc;
+ 
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+ 
+
+}
+.opo ul{
+  margin-top: 15px;
+  
+}
+.jj{
+  width: auto;
+  height:30px ; 
+  font-size: 16px;
+  background-color: #f8d7da;
+  padding: 0;
+  list-style: none;
+  margin-top: 25px;
+  color: #842029;
+ 
+ 
+}
+.btn{
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  background-color: #dc3545;
+  
+  
+  
+}
+.btn:hover{
+  
+  background-color: #c0303e;
+  
+}
+.btn2:hover{
+  background-color: #13643e;
+  
+}
+.btn2{
+  background-color: #146c43;
+
+}
+/* -------------------------------------End of category------------------------------------------------- */
+#submitBtn{
+  border: 1px solid #c0303e;
+}
+
+
+

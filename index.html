@@ -1,0 +1,167 @@
+<html>
+
+<head>
+
+    <title>Yummy.Amr</title>
+    <link rel="icon" href="media/logo.png" type="image/icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anton&family=Assistant:wght@500&family=Montserrat:wght@400;700;800;900&family=Open+Sans&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap" rel="stylesheet">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anton&family=Montserrat:wght@400;700;800;900&family=Open+Sans&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+    <!--------------------------------------End of loading screen-------------------------------------------------------->
+
+    <div class="container">
+        <div class="row py-5 g-4 " id="rowData">
+
+        </div>
+    </div>
+
+
+    <!--------------------------------------End of loading screen-------------------------------------------------------->
+
+    <section id="searchPage" class=" searchPage d-none ">
+        <div class=" py-3 ">
+            <div class=" input-div ">
+                <input class="form-control text-white" placeholder="Search By Name" type="text" name="" id="mealName">
+                <input class="form-control text-white" placeholder="Search By Name" maxlength="1" type="text" name=""
+                    id="firstLetter">
+
+            </div>
+
+
+        </div>
+    </section>
+    <!--------------------------------------End of search layer-------------------------------------------------------->
+
+
+    <aside class=" position-fixed ">
+        <div class="nav-bar d-flex w-100 justify-content-start ">
+            <div class="topics  d-flex justify-content-between flex-column">
+                <div class="side-list">
+                    <ul>
+
+                        <li id="search">Search</li>
+
+                        <li id="Categories">Categories</li>
+
+                        <li id="area">Area</li>
+
+                        <li id="ingredients">Ingredients</li>
+
+                        <li onclick="showContacts()" id="Contact">Contact us</li>
+                    </ul>
+                </div>
+
+
+
+                <footer>
+                    <div class="social-links   ">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i></i>
+                    </div>
+                    <p>Copyright Amr Mamdouh 2024 All
+                        Rights
+                        Reserved.</p>
+                </footer>
+
+
+            </div>
+
+
+            <div class="white-sideBar  py-4">
+                <div class="logo-div d-flex justify-content-between align-items-center flex-column ">
+                    <img src="media/logo.png" alt="">
+                    <i class="fa-solid fa-bars menu"></i>
+                    <i onclick="toggleSidebar()" class="fa-solid fa-x "></i>
+
+
+
+                    <div class="mini-socialLinks d-flex flex-column ">
+                        <a href=""><i class="fa-solid fa-globe"></i></a>
+                        <a href=""> <i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </aside>
+    <!--------------------------------------End of aside nav bar-------------------------------------------------------->
+
+
+    <section>
+        <div class="container ">
+
+            <div class="row overflow-hidden ">
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------End of main meals-------------------------------------------------------->
+
+
+    <section>
+        <div class="row  ">
+
+
+
+
+
+
+
+
+        </div>
+
+    </section>
+    <!--------------------------------------End of meal description-------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js">  </script>
+</body>
+
+</html>
